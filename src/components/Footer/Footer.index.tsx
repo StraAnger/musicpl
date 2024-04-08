@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Footer.module.scss"
 import { useAppContext } from "./../../useAppContext.tsx";
+import { RxSpeakerLoud } from "react-icons/rx";
+import { CgPlayList } from "react-icons/cg";
 
 const Footer: React.FC = () => {
 
@@ -30,8 +32,9 @@ const Footer: React.FC = () => {
 
     return (
         <footer className={styles.footer}>
-            <div>
-                <div className="time">
+            <div className={styles.songNumber}>7 / 39</div>
+            <div className={styles.progressBar}>
+                <div className={styles.timer}>
                     <p>
                         {currTime.min}:{currTime.sec}
                     </p>
@@ -45,9 +48,16 @@ const Footer: React.FC = () => {
                     className={styles.timeline}
                     onChange={(e) => {
                         sound.seek([e.target.value]);
-                        setSeconds(parseInt(e.target.value)); // Update seconds state
+                        setSeconds(parseInt(e.target.value));
                     }}
                 />
+                <div className={styles.timer}>
+                    <p>
+                        {time.min}:{time.sec}
+                    </p>
+                </div>
+                <CgPlayList />
+                <RxSpeakerLoud />
             </div>
         </footer>
     );

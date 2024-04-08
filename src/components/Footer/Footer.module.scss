@@ -1,8 +1,50 @@
 footer {
-    text-align: center;
+    display: flex;
 
-    .timeline {
-        width: 100%;
-        height: 1px;
+    .songNumber {
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 188px;
+        height: 89px;
+    }
+
+    .progressBar {
+        text-align: center;
+        font-size: 45px;
+        position: absolute;
+        height: 89px;
+        bottom: 0;
+        right: 0;
+        width: 1600px;
+        height: 89px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+
+        .timer {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            width: 90px;
+        }
+
+        .timeline {
+            position: relative;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+        }
     }
 }

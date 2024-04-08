@@ -32,6 +32,7 @@ const Player: React.FC = () => {
                     <IoIosRepeat />
                 </div>
             </div>
+            <div className={styles.dummyDiv}></div>
             <Albums />
             <div className={styles.next}>
             </div>
