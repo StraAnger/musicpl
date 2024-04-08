@@ -1,0 +1,43 @@
+{
+    "albums": [
+        {
+            "id": 1,
+            "title": "Best songs",
+            "author":"Johny A.",
+            "image": "01.jpg",
+            "songs": [
+                {"1":"First song.mp3"},
+                {"2":"Second song.mp3"},
+                {"3":"Third song.mp3"},
+                {"4":"Fourth song.mp3"},
+                {"5":"Fifth song.mp3"}
+            ]            
+        },
+        {
+            "id": 2,
+            "title": "Second album",
+            "author":"Johny B.",
+            "image": "02.jpg",
+            "songs": [
+                {"1":"First song.mp3"},
+                {"2":"Second song.mp3"},
+                {"3":"Third song.mp3"},
+                {"4":"Fourth song.mp3"},
+                {"5":"Fifth song.mp3"}
+            ]            
+        },
+        {
+            "id": 3,
+            "title": "Ballads",
+            "author":"Johny C.",
+            "image": "03.jpg",
+            "songs": [
+                {"1":"First song.mp3"},
+                {"2":"Second song.mp3"},
+                {"3":"Third song.mp3"},
+                {"4":"Fourth song.mp3"},
+                {"5":"Fifth song.mp3"}
+            ]            
+        }
+    ]
+}
